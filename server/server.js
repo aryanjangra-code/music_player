@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // Import your Song model
-const Song = require('./model/Song');
+const Song = require('./models/Songg');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
