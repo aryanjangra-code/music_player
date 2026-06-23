@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <nav class="glass-panel top-nav">
+            <div class="logo">Aura Music</div>
+            <button id="theme-toggle" class="btn">Toggle Theme</button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Currently Playing Visual -->
+            <div class="glass-panel active-song-display">
+                <img id="active-cover" src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500&q=80" alt="Cover Art">
+                <h2 id="active-title">Select a Song</h2>
+                <p id="active-artist">Artist</p>
+            </div>
+
+            <!-- Track List -->
+            <div class="glass-panel playlist-container">
+                <h3>Your Cloud Library</h3>
+                <ul id="track-list" class="track-list">
+                    <!-- Songs injected via JS -->
+                </ul>
+            </div>
+        </main>
+
+        <!-- Floating Playbar -->
+        <div class="glass-panel floating-playbar">
+            <div class="controls">
+                <button id="prev-btn" class="ctrl-btn">⏮</button>
+                <button id="play-btn" class="ctrl-btn play-pause">▶</button>
+                <button id="next-btn" class="ctrl-btn">⏭</button>
+            </div>
+            
+            <div class="progress-container">
+                <span id="current-time">00:00</span>
+                <div class="seekbar" id="seekbar">
+                    <div class="circle" id="progress-circle"></div>
+                </div>
+                <span id="total-time">00:00</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
